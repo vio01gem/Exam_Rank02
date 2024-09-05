@@ -1,3 +1,5 @@
+# include <stdio.h>
+
 int ft_strlen(char *str)
 {
 	int	i = 0;
@@ -5,4 +7,9 @@ int ft_strlen(char *str)
 	while (str[i])
 		i++;
 	return (i);
+}
+
+int main()
+{
+	printf("%d\n", ft_strlen("hello"));
 }
