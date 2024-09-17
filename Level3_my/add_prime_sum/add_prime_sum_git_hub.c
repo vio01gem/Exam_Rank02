@@ -53,3 +53,12 @@ int main(int ac, char **av)
 	write(1, "\n", 1);
 	return (0);
 }
+
+uint i = 0;
+int max = 0;
+while(i <= len)
+{
+	if (i > max)
+		max = i;
+	i++;
+}
