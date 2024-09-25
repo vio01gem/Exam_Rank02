@@ -19,16 +19,12 @@ int	ft_atoi(char *str)
 	return (sign * result);
 }
 
-void	ft_putchar(char c)
+void ft_putnbr(int n)
 {
-	write(1, &c, 1);
-}
-
-void	ft_putnbr(int nb)
-{
-	if (nb / 10 > 0)
-		ft_putnbr(nb / 10);
-	ft_putchar(nb % 10 + '0');
+    if (n >= 10)
+        ft_putnbr(n / 10);
+    char num = n % 10 + 48;
+    write (1, &num, 1);
 }
 
 int	main(int argc, char *argv[])
