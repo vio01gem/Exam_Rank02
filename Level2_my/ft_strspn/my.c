@@ -4,7 +4,7 @@
 char *my_strchr(char *s, char find)
 {
     int i = 0;
-    while(s[i])
+    while (s[i])
     {
         if (s[i] == find)
             return (s + i);
@@ -12,12 +12,13 @@ char *my_strchr(char *s, char find)
     }
     return (0);
 }
-size_t	ft_strcspn(const char *s, const char *reject)
+
+size_t	ft_strspn(const char *s, const char *accept)
 {
     size_t i = 0;
-    while (s[i])
+    while(s[i])
     {
-        if (my_strchr((char *)reject, s[i]) != 0)
+        if (my_strchr((char *)accept, s[i]) == 0)
             break;
         i++;
     }
@@ -26,6 +27,7 @@ size_t	ft_strcspn(const char *s, const char *reject)
 
 int main ()
 {
-    printf("%zu\n", strcspn("Hiworld", "dok"));
-    printf("%zu\n", ft_strcspn("Hiworld", " dok"));
+
+    printf("%zu\n", ft_strspn("hello", "hijoke"));
+    printf("%zu\n", strspn("hello", "hijoke"));
 }

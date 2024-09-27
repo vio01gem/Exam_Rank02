@@ -1,6 +1,12 @@
-unsigned char swap_bits(unsigned char octet)
+#include <stdio.h>
+unsigned char	swap_bits(unsigned char octet)
 {
-	return ((octet >> 4) | (octet << 4));
+    return(octet >> 4 | octet << 4);
+}
+
+int main ()
+{
+    printf("%d\n", swap_bits(65));
 }
 
 /*
