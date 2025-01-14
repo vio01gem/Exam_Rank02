@@ -19,6 +19,6 @@ int max(int* tab, unsigned int len)
 
 int main ()
 {
-    int tab[] = {1, 2, 50, 15, 5};
+    int tab[] = {169, 267, 580, 915, 345};
     printf("%d\n", max(tab, 5));
 }
