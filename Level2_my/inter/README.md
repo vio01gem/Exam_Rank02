@@ -18,7 +18,6 @@ Examples:
 
 $>./inter "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
 padinto$
-padinton$
 $>./inter ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
 df6ewg4$
 $>./inter "rien" "cette phrase ne cache rien" | cat -e

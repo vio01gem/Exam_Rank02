@@ -16,7 +16,7 @@ A snake_case string is a string where each word is in lower case, separated by
 an underscore "_".
 
 Examples:
-$>./camel_to_snake "hereIsACamelCaseWord"
+$>./camel_to_snake 
 here_is_a_camel_case_word
 $>./camel_to_snake "helloWorld" | cat -e
 hello_world$

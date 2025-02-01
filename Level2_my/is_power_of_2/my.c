@@ -10,6 +10,6 @@ int	    is_power_of_2(unsigned int n)
 int main ()
 {
     int n;
-    n = 16;
+    n = 17;
     printf("%d\n", is_power_of_2(n));
 }

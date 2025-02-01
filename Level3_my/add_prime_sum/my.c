@@ -5,7 +5,7 @@ int atoi(char *str)
     int res = 0;
     while(*str)
     {
-        res = res * 10 + *str - 48;
+        res = res * 10 + *str - '0';
         str++;
     }
     return(res);
@@ -27,7 +27,7 @@ void put_nbr(int n)
 {
     if (n >= 10)
         put_nbr(n / 10);
-    char num = n % 10 + 48;
+    char num = n % 10 + '0';
     write (1, &num, 1);
 }
 

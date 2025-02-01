@@ -22,6 +22,6 @@ char	*ft_strpbrk(const char *s1, const char *s2)
 
 int main(void)
 {
-    printf("%s\n", ft_strpbrk("hiWorld", "Wj")); 
-    printf("%s\n", strpbrk("hiWorld", "Wj"));
+    printf("%s\n", ft_strpbrk("hiWorld", "jWij")); 
+    printf("%s\n", strpbrk("hiWorld", "jWij"));
 }

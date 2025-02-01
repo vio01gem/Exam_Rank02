@@ -24,8 +24,8 @@ char    *ft_strdup(char *src)
     return(dest);
 }
 
-int main(void)
-{
-    printf("%s\n", ft_strdup("hello"));
-    printf("%s", strdup("hello"));
-}
+    int main(void)
+    {
+        printf("%s\n", ft_strdup("hello"));
+        printf("%s", strdup("hello"));
+    }

@@ -6,7 +6,7 @@ unsigned char	swap_bits(unsigned char octet)
 
 int main ()
 {
-    printf("%d\n", swap_bits(65));
+    printf("%d\n", swap_bits(9));
 }
 
 /*

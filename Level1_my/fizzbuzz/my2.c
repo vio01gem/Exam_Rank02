@@ -2,10 +2,10 @@
 
 void putnbr(int num)
 {
-    char *array = "0123456789";
+    char digits[] = "0123456789";
     if (num >= 10)
         putnbr(num/10);
-    write (1, &array[num % 10], 1);
+    write (1, &digits[num % 10], 1);
 }
 
 int main ()
