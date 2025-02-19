@@ -1,22 +1,38 @@
-#include "ft_list.h"
+// typedef struct    s_list
+// {
+//     struct s_list *next;
+//     void          *data;
+// }                 t_list;
 
 int	ft_list_size(t_list *begin_list)
 {
-    int count = 0;
-    t_list *temp_list = begin_list;
-    while (temp_list)
+    int counter = 0;
+    while (begin_list)
     {
-        count++;
-        temp_list = temp_list -> next;
+        counter++;
+        begin_list = begin_list->next;
     }
-    return (count);
+    return (counter);
 }
+// #include <stdlib.h>
 
-t_list *new_list(void *data)
-{
-    t_list *new_node = (t_list *)malloc(sizeof(t_list));
-    new_node->data = data;
-    new_node->next = NULL;
-    return new_node;
-}
-int main
+// t_list *create_node(void *data)
+// {
+//     t_list *node = malloc(sizeof(t_list));
+//     node->data = data;
+//     node->next = NULL;
+//     return (node);
+// }
+
+// #include <stdio.h>
+
+// int main(void)
+// {
+//     t_list *node = create_node("data1");
+//     node->next = create_node("data2");
+//     node->next->next = create_node("data3");
+
+//     int size = ft_list_size(node);
+//     printf("%d", size);
+
+// }

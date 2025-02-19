@@ -1,6 +1,6 @@
 #include <unistd.h>
 /*
-    mush more simple way to do it : )
+    much more simple way to do it : )
 */
 int	ft_atoi_base(const char *str, int str_base)
 {
