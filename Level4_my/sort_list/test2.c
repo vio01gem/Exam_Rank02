@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// typedef struct s_list
-// {
-//     int             content;
-//     struct s_list   *next;
-// }                   t_list;
+typedef struct s_list
+{
+    int             content;
+    struct s_list   *next;
+}                   t_list;
 
 t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
 {
@@ -26,30 +26,30 @@ t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
     return (start);
 }
 
-// int ascending(int a, int b)
-// {
-// 	return (a <= b);
-// }
+int ascending(int a, int b)
+{
+	return (a <= b);
+}
 
-// t_list *lstnew(int content)
-// {
-//     t_list *node = malloc(sizeof(t_list));
-//     node->content = content;
-//     node->next = NULL;
-//     return (node);
-// }
+t_list *lstnew(int content)
+{
+    t_list *node = malloc(sizeof(t_list));
+    node->content = content;
+    node->next = NULL;
+    return (node);
+}
 
-// int main(void)
-// {
-//     t_list *node = lstnew(1);
-//     node->next = lstnew(8);
-//     node->next->next = lstnew(3);
+int main(void)
+{
+    t_list *node = lstnew(1);
+    node->next = lstnew(8);
+    node->next->next = lstnew(3);
 
-//     node = sort_list(node, ascending);
-//     t_list *tmp = node;
-//     while (tmp)
-//     {
-//         printf("%d\n", tmp->content);
-//         tmp = tmp->next;
-//     }
-// }
+    node = sort_list(node, ascending);
+    t_list *tmp = node;
+    while (tmp)
+    {
+        printf("%d\n", tmp->content);
+        tmp = tmp->next;
+    }
+}
