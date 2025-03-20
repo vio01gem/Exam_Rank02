@@ -25,9 +25,10 @@ int main(int argc, char **argv)
 				write (1, &argv[1][start],1);
 				start++;		
 			}
-			if (flag !=0)
+			if (flag !=0) //it checks if the start was 0(begining of the str).. caz if it was.. no need space)
 				write(1, " ", 1);
 		}
 	}
 	write(1, "\n", 1);
 }
+

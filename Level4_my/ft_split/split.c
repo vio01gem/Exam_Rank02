@@ -38,7 +38,7 @@ int	main(void)
 	char	**tab;
 
 	i = 0;
-	tab = ft_split("    The prophecy i s 	true lol 		   ici");
+	tab = ft_split("This			  split is    ok ish          ");
 	while (i < 7)
 	{
 		printf("String %d : %s\n", i, tab[i]);

@@ -5,19 +5,20 @@ int	ft_atoi(const char *str)
 {
     int sign = 1;
     int num = 0;
+    int i = 0;
 
-    while (*str == ' ' || *str >= 9 && *str <= 13)
-        str++;
-    if (*str == '-' || *str == '+')
+    while (str[i] == ' ' || str[i] >= 9 && str[i] <= 13)
+        i++;
+    if (str[i] == '-' || str[i] == '+')
     {
-        if (*str == '-')
+        if (str[i] == '-')
             sign *= -1;
-        str++;
+        i++;
     }
-    while (*str >= '0' && *str <= '9')
+    while (str[i] >= '0' && str[i] <= '9')
     {
-        num = num * 10 + *str - '0';
-        str++;
+        num = num * 10 + str[i] - '0';
+        i++;
     }
     return (num * sign);
 }

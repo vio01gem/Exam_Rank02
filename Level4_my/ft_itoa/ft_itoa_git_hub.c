@@ -14,7 +14,7 @@ char *ft_itoa(int nbr)
 		n /= 10;
 		len++;
 	}
-	char *result = (char *)malloc(sizeof(char) * (len + 1));
+	char *result = malloc(len + 1);
 	if (result == NULL) 
 		return NULL;
 	result[len] = '\0';
@@ -30,7 +30,8 @@ char *ft_itoa(int nbr)
 	}
 	while (nbr) 
 	{
-		result[--len] = nbr % 10 + '0';
+		len--;
+		result[len] = nbr % 10 + '0';
 		nbr /= 10;
 	}
 	return result;

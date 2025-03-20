@@ -8,11 +8,11 @@ int	main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		i = 1;
+		i = 2;
 		number = atoi(argv[1]);
 		if (number == 1)
 			printf("1");
-		while (number >= ++i)
+		while (number >= i)
 		{
 			if (number % i == 0)
 			{
@@ -21,8 +21,9 @@ int	main(int argc, char *argv[])
 					break ;
 				printf("*");
 				number /= i;
-				i = 1;
+				i = 2;
 			}
+			i++;
 		}
 	}
 	printf("\n");

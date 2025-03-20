@@ -31,7 +31,7 @@ char    **ft_split(char *str)
 
 // int main(void)
 // {
-//     char **split = ft_split("   hi i think   i am   mariam ");
+//     char **split = ft_split("   hi i think   i am   lost ");
 // 	printf("%s\n", split[0]);
 // 	printf("%s\n", split[1]);
 // 	printf("%s\n", split[2]);

@@ -1,14 +1,22 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+int my_abs(int n)
+{
+    if (n < 0)
+        return (-n);
+    return (n);
+}
+
+
 int     *ft_range(int start, int end)
 {
     int i = 0;
-    int len = abs((end - start)) + 1;
+    int len = my_abs((end - start)) + 1;
     int *res = malloc(sizeof(int) * len);
 
     if (!res)
-        return (0);
+        return (NULL);
 
     while (i < len)
     {

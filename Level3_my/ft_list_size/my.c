@@ -1,19 +1,16 @@
-// typedef struct    s_list
-// {
-//     struct s_list *next;
-//     void          *data;
-// }                 t_list;
+#include "ft_list.h"
 
 int	ft_list_size(t_list *begin_list)
 {
-    int counter = 0;
-    while (begin_list)
-    {
-        counter++;
-        begin_list = begin_list->next;
-    }
-    return (counter);
+	int i = 0;
+	while(begin_list)
+	{
+		i++;
+		begin_list = begin_list->next;
+	}
+	return(i);
 }
+
 // #include <stdlib.h>
 
 // t_list *create_node(void *data)
